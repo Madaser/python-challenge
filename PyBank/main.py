@@ -26,9 +26,6 @@ with open(csvpath, newline='') as csvfile:
     for i in range(len(rows)):
         extrarows.append((rows[i][1]))
         extracolumns.append((rows[i][0]))
-        
-    print(extrarows)
-    print(extracolumns)
     
     First_Value=int(extrarows[0])
     Average=(Last_Value-First_Value)/Months
@@ -86,7 +83,6 @@ with open(csvpath, newline='') as csvfile:
     output_path = os.path.join("..", "new.txt")
     with open(output_path, 'w', newline='') as csvfile:
 
-    # Initialize csv.writer
         csvwriter = csv.writer(csvfile, delimiter=',')
 
         csvwriter.writerow([f'Total Months: {Months}'])
