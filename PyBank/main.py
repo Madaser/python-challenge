@@ -27,7 +27,8 @@ with open(csvpath, newline='') as csvfile:
         extrarows.append((rows[i][1]))
         extracolumns.append((rows[i][0]))
         
-
+    print(extrarows)
+    print(extracolumns)
     
     First_Value=int(extrarows[0])
     Average=(Last_Value-First_Value)/Months
